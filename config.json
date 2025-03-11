@@ -1,0 +1,9 @@
+{
+  "listenPort": ":8080",
+  "healthCheckInterval": "10s",
+  "servers": [
+    "http://backend1:8081",
+    "http://backend2:8082",
+    "http://backend3:8083"
+  ]
+}

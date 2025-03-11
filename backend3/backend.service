@@ -1,0 +1,12 @@
+[Unit]
+Description=Backend Server
+After=network.target
+
+[Service]
+User=ec2-user
+WorkingDirectory=/home/ec2-user/backend-app
+ExecStart=/home/ec2-user/backend-app/backend 8083
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

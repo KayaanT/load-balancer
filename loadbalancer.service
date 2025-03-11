@@ -1,0 +1,12 @@
+[Unit]
+Description=Custom Load Balancer
+After=network.target
+
+[Service]
+User=ec2-user
+WorkingDirectory=/home/ec2-user/load-balancer
+ExecStart=/home/ec2-user/load-balancer/main
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
